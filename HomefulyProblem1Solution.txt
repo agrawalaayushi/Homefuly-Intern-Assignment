@@ -1,0 +1,11 @@
+Since there is console.log() method. So output will be visible in the console.
+Code will print - 
+Output Line 1 - Aurelio De Rosa
+Output Line 2 - John Doe
+
+Reason of o/p line 1 - In javascript, it depends on how the function is called not how it is defined.
+Here, first we have called getFullName() function,  which is returning this.Fullname. 
+"this" keyword referes to the current object. So, It will refer to the current fullname of property of object i.e.  : 'Aurelio De Rosa'
+
+Reason of o/p line 2 - we are storing the getFullname into test variable. Here, getFullname is not representing the function name. It is referring to the global attribute/variable not the local variable.
+So, it will print the global variable "fullname = 'John Doe'"
